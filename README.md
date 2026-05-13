@@ -1,5 +1,5 @@
 # 🌞 About Me:
-🎃 I’m currently working on Reproducible Earth system data processing pipelines (precipitation, ERA5, station data)<br>🌏 I’m looking to collaborate on Climate data processing, ML for Earth systems, and open scientific workflows<br>📚 Education<br>M.Sc. Computational Science (Earth System Science) — University of Cologne<br>B.Sc. Physics — strong foundation in mathematical modelling and scientific thinking<br>👾 Fun fact I love building systems where science, code, and intuition meet<br><br>
+🌏 I’m looking to collaborate on Climate data processing, ML for Earth systems, and open scientific workflows<br>📚 Education<br>M.Sc. Computational Science (Earth System Science) — University of Cologne<br>B.Sc. Physics — strong foundation in mathematical modelling and scientific thinking<br>👾 Fun fact I love building systems where science, code, and intuition meet<br><br>
 
 
 ## 🌐 Socials:
