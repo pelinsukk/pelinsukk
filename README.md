@@ -1,113 +1,137 @@
-# 🌍 Pelin Su Kaplan
-### M.Sc. Computational Science (Earth System Sciences) · University of Cologne
+# Pelin Su Kaplan
 
-I build end-to-end data pipelines for large-scale climate and atmospheric datasets.  
-My work sits at the intersection of **scientific Python**, **Earth system modelling**, and **reproducible research** — turning raw reanalysis data into analysis-ready outputs.
+### M.Sc. Computational Science (Earth System Sciences) @ University of Cologne
 
-🌐 Looking to collaborate on climate data processing, ML for Earth systems, and open scientific workflows  
-📍 Cologne, Germany · Open to remote & EU-based opportunities  
-📬 pelinsukaplan0599@icloud.com
+Physics-trained computational science student working at the intersection of **scientific computing, Earth system modelling, climate data, and machine learning**.
 
----
+I am particularly interested in using numerical simulation and data-driven methods to study physical and environmental systems.
 
-## 🔭 Current Projects (2025–2026)
-
-### 🤖 Machine Learning for Earth System Sciences
-Applying supervised and deep learning methods to geospatial climate datasets. Feature engineering from ERA5 reanalysis variables, building ML pipelines with domain-specific evaluation metrics (skill scores, spatial verification).  
-`scikit-learn` `xarray` `ERA5` `Time Series ML` `Feature Engineering`
-
-### 📐 Simulation & Modelling — Advanced Numerical Methods
-Extending physics-based simulations with higher-order solvers and uncertainty quantification. Building on a foundation of observational-data-driven modelling from S&M 1.  
-`NumPy` `SciPy` `Numerical Methods` `Physical Simulation`
-
-### ☀️ Physical Climatology
-Quantitative analysis of atmospheric energy budgets, radiation balance, and large-scale circulation patterns. Hands-on work with observational and reanalysis datasets.  
-`Climate Physics` `NetCDF` `Atmospheric Dynamics` `Matplotlib`
+**Current focus:** Scientific Python · Numerical Simulation · Earth System Data · Machine Learning  
+**Based in:** Cologne, Germany  
+**Open to:** HiWi / Research Assistant · Internship · Scientific Computing · Climate & Energy · Scientific ML
 
 ---
 
-## 📦 Completed Projects
+## Selected Projects
 
-### 🗂 Earth System Data Processing —  · Feb 2026
-> Designed and implemented a modular, reproducible Python pipeline for climate data acquisition, processing, and storage — University of Cologne, ESDP1 WS 2025/26.
+### Surface Gravity Waves — Numerical Simulation of the Shallow-Water Equations
+**Simulation & Modelling 2 · University of Cologne · Jul 2026**
 
-**Scope:** ~60 hours of individual work; submitted via Git pull request with full documentation.
+Numerically simulated the propagation of surface gravity waves using the two-dimensional shallow-water equations and investigated how discretization and grid design affect numerical stability and accuracy.
 
-- Defined and implemented a **custom data processing task** from scratch: dataset selection, pipeline architecture, and end-to-end execution
-- Accessed and processed atmospheric datasets in **GRIB and NetCDF formats** using `xarray` and `cfgrib`
-- Applied **spatial subsetting, temporal aggregation, and regridding** on multi-dimensional climate arrays
-- Converted processed outputs to **Zarr format** for chunked, cloud-compatible, analysis-ready storage
-- Maintained a fully **reproducible workflow** via structured Git history, config files, and detailed README documentation
-- Presented the project in the final course session (Feb 5, 2026)
+- Derived the simplified **shallow-water equations** under hydrostatic balance
+- Implemented finite-difference discretization using an **FTCS-based numerical scheme**
+- Analysed numerical stability using the **Courant-Friedrichs-Lewy (CFL) condition**
+- Investigated grid-scale checkerboard oscillations produced on a regular grid
+- Applied a **Shapiro filter** to suppress numerical noise
+- Implemented an **Arakawa-C staggered grid**, placing surface elevation and velocity components at different grid locations
+- Compared regular-grid and staggered-grid simulations under identical initial conditions
+- Demonstrated improved stability and reduced numerical oscillations with the Arakawa-C grid
+- Simulated the propagation of a localized surface perturbation with periodic boundary conditions
 
-`ERA5` `GRIB` `NetCDF` `Zarr` `xarray` `cfgrib` `Git` `Reproducible Research` `Modular Pipeline Design`
-
----
-
-### 🌧 Rainfall Estimation from Radar Data using Machine Learning · Jan 2026
-> Replaced empirical Z–R relationships with data-driven ML models to improve precipitation estimation from 3D radar reflectivity volumes — University of Cologne, Simulation & Modelling 1.
-
-**Problem:** Traditional radar-to-rainfall conversion (Z = a·R^b) fails across precipitation types (stratiform vs. convective) and is sensitive to drop size distribution. We used ML to learn these relationships directly from data.
-
-- Processed **3D radar volume data** matched with rain gauge ground truth; handled severe class imbalance (90% non-rain samples)
-- Implemented three model tiers: **Z–R empirical baseline → Linear Regression → Graph Neural Network (GNN)**
-- GNN explicitly modelled **spatial relationships** between radar bins across elevation sweeps, capturing precipitation structure at multiple heights
-- Evaluated all models with RMSE, MAE, P95 absolute error, and bias — GNN outperformed all baselines (RMSE 0.37, MAE 0.21 vs. baseline RMSE 0.44)
-- Presented findings to three supervising professors at University of Cologne (Jan 28, 2026)
-
-`PyTorch Geometric` `GNN` `scikit-learn` `NumPy` `Matplotlib` `Radar Data` `GRIB` `Class Imbalance` `RMSE` `MAE`
+**Tech & Methods:** `Python` `NumPy` `Matplotlib` `PDEs` `Finite Differences` `FTCS` `CFL Stability` `Shapiro Filter` `Arakawa-C Grid` `Shallow-Water Equations`
 
 ---
 
-## 🛠 Tech Stack
+### Rainfall Estimation from Radar Data using Machine Learning
+**Simulation & Modelling 1 · University of Cologne · Jan 2026**
 
-**Climate & Scientific Data**  
-`ERA5` `NetCDF` `GRIB` `Zarr` `xarray` `cfgrib` `CMIP-style workflows` `Reanalysis datasets`
+Developed and evaluated data-driven approaches for estimating precipitation from three-dimensional radar reflectivity data.
 
-**Scientific Python**  
-`NumPy` `Pandas` `SciPy` `Matplotlib` `scikit-learn`
+- Processed **3D radar volume data** matched with rain-gauge observations
+- Worked with strongly imbalanced precipitation data containing a large proportion of non-rain samples
+- Compared three modelling approaches: an empirical **Z-R relationship**, **Linear Regression**, and a **Graph Neural Network (GNN)**
+- Used graph-based modelling to represent spatial relationships between radar bins across elevation sweeps
+- Evaluated predictions using **RMSE, MAE, P95 absolute error, and bias**
+- Achieved improved predictive performance with the GNN compared with the empirical baseline
+- Presented the final results to the supervising professors
 
-**Methods**  
-`Spatial subsetting` `Temporal aggregation` `Regridding` `Time series analysis` `Numerical methods` `ML pipelines`
-
-**Tools & Platforms**  
-`Git` `GitHub` `Jupyter Notebook` `VS Code` `Linux/CLI` `Bash`
-
-**Best Practices**  
-`Reproducible research` `Modular pipeline design` `Config-driven workflows` `Structured documentation`
+**Tech & Methods:** `Python` `PyTorch Geometric` `scikit-learn` `NumPy` `Matplotlib` `Graph Neural Networks` `Radar Data` `Regression` `Model Evaluation`
 
 ---
 
-## 🎓 Education
+### Earth System Data Processing Pipeline
+**Earth System Data Processing · University of Cologne · Feb 2026**
 
-🎓 **M.Sc. Computational Science — Earth System Sciences** · University of Cologne · Oct 2025 – Present  
-&nbsp;&nbsp;&nbsp;&nbsp;*Earth System Data Processing · Simulation & Modelling · Physics of the Atmosphere · Numerical Methods · Statistics & Data Analysis*
+Designed and implemented a reproducible Python workflow for processing multidimensional atmospheric datasets from raw input to analysis-ready output.
 
-🎓 **B.Sc. Physics** · Full Merit Scholarship · Graduated 2025
+- Designed an end-to-end data-processing task from dataset selection to final output
+- Accessed and processed atmospheric data in **GRIB and NetCDF** formats
+- Used `xarray` and `cfgrib` for labelled multidimensional data processing
+- Applied **spatial subsetting, temporal aggregation, and regridding**
+- Converted processed datasets to **Zarr** for chunked, analysis-ready storage
+- Structured the project as a modular and reproducible workflow using configuration files and documentation
+- Used Git throughout development and submitted the completed project through a Git-based workflow
 
----
-
-## 🏅 Certifications & Training
-
-**Green ICT Camp** · Forschungsfabrik Mikroelektronik Deutschland (FMD) · March 2025  
-5-day intensive on sustainable & energy-efficient technologies in ICT, funded by BMBF (German Federal Ministry of Education and Research).  
-*Energy-efficient AI · Distributed embedded systems · Life cycle assessment · Eco-design*
-
----
-
-## 📊 GitHub Stats
-
-![](https://github-readme-stats.vercel.app/api?username=pelinsukk&theme=rose&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=pelinsukk&theme=rose&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=pelinsukk&theme=rose&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+**Tech & Methods:** `Python` `xarray` `cfgrib` `ERA5` `GRIB` `NetCDF` `Zarr` `Git` `Regridding` `Reproducible Workflows`
 
 ---
 
-## 🌐 Connect
+## Technical Skills
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/pelin-su-kaplan-4b8756184)
-[![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:pelinsukaplan0599@icloud.com)
+**Programming & Scientific Computing**  
+`Python` · `NumPy` · `SciPy` · `Pandas` · `Matplotlib`
+
+**Earth System & Geospatial Data**  
+`xarray` · `ERA5` · `NetCDF` · `GRIB` · `Zarr` · `cfgrib`
+
+**Machine Learning**  
+`scikit-learn` · `PyTorch` · `PyTorch Geometric` · `Regression` · `Graph Neural Networks`
+
+**Numerical Modelling**  
+`ODEs` · `PDEs` · `Finite Differences` · `Numerical Stability` · `CFL Analysis` · `Numerical Simulation`
+
+**Research Workflow**  
+`Git` · `GitHub` · `Jupyter Notebook` · `VS Code` · `Linux/CLI` · `Bash`
 
 ---
 
-![](https://visitcount.itsvg.in/api?id=pelinsukk&icon=0&color=0)](https://visitcount.itsvg.in)
+## Currently Working On
+
+### Machine Learning for Earth System Sciences
+
+Developing practical experience with machine-learning methods for environmental and geospatial data, including supervised learning, deep learning, feature engineering, and spatial model evaluation.
+
+`scikit-learn` · `PyTorch` · `xarray` · `Remote Sensing` · `Earth System Data`
+
+### Scientific Computing
+
+Deepening my understanding of numerical algorithms for physical systems, with a focus on discretization, stability, convergence, and translating mathematical models into reliable scientific software.
+
+`Numerical Methods` · `ODE/PDE Solvers` · `Scientific Python` · `Simulation`
+
+---
+
+## Education
+
+### M.Sc. Computational Science — Earth System Sciences
+**University of Cologne · Oct 2025 - Present**
+
+Relevant areas:  
+`Earth System Data Processing` · `Simulation & Modelling` · `Machine Learning for Earth System Sciences` · `Physical Climatology` · `Numerical Methods` · `Statistics & Data Analysis`
+
+### B.Sc. Physics
+**Graduated 2025 · Full Merit Scholarship**
+
+---
+
+## Additional Training
+
+### Green ICT Camp
+**Forschungsfabrik Mikroelektronik Deutschland (FMD) · Mar 2025**
+
+Five-day intensive programme focused on sustainable and energy-efficient ICT technologies.
+
+`Energy-Efficient AI` · `Distributed Embedded Systems` · `Life Cycle Assessment` · `Eco-Design`
+
+---
+
+## Research Interests
+
+`Scientific Machine Learning` · `Climate & Earth System Modelling` · `Numerical Simulation` · `Environmental Data Science` · `Climate & Energy Applications` · `Scientific Software`
+
+---
+
+## Contact
+
+[LinkedIn](https://linkedin.com/in/pelin-su-kaplan-4b8756184) · [Email](mailto:pelinsukaplan0599@icloud.com)
