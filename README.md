@@ -111,6 +111,7 @@ Relevant areas:
 `Earth System Data Processing` · `Simulation & Modelling` · `Machine Learning for Earth System Sciences` · `Physical Climatology` · `Numerical Methods` · `Statistics & Data Analysis`
 
 ### B.Sc. Physics
+**Izmir University of Economics · Graduated 2025 · Full Merit Scholarship**
 **Graduated 2025 · Full Merit Scholarship**
 
 ---
@@ -128,7 +129,7 @@ Five-day intensive programme focused on sustainable and energy-efficient ICT tec
 
 ## Research Interests
 
-`Scientific Machine Learning` · `Climate & Earth System Modelling` · `Numerical Simulation` · `Environmental Data Science` · `Climate & Energy Applications` · `Scientific Software`
+`Scientific Machine Learning` · `Climate & Earth System Modelling` · `Numerical Simulation` · `Environmental Data Science` · `Battery & Energy Systems Modelling` · `Scientific Software`
 
 ---
 
