@@ -12,61 +12,6 @@ I am particularly interested in using numerical simulation and data-driven metho
 
 ---
 
-## Selected Projects
-
-### Surface Gravity Waves — Numerical Simulation of the Shallow-Water Equations
-**Simulation & Modelling 2 · University of Cologne · Jul 2026**
-
-Numerically simulated the propagation of surface gravity waves using the two-dimensional shallow-water equations and investigated how discretization and grid design affect numerical stability and accuracy.
-
-- Derived the simplified **shallow-water equations** under hydrostatic balance
-- Implemented finite-difference discretization using an **FTCS-based numerical scheme**
-- Analysed numerical stability using the **Courant-Friedrichs-Lewy (CFL) condition**
-- Investigated grid-scale checkerboard oscillations produced on a regular grid
-- Applied a **Shapiro filter** to suppress numerical noise
-- Implemented an **Arakawa-C staggered grid**, placing surface elevation and velocity components at different grid locations
-- Compared regular-grid and staggered-grid simulations under identical initial conditions
-- Demonstrated improved stability and reduced numerical oscillations with the Arakawa-C grid
-- Simulated the propagation of a localized surface perturbation with periodic boundary conditions
-
-**Tech & Methods:** `Python` `NumPy` `Matplotlib` `PDEs` `Finite Differences` `FTCS` `CFL Stability` `Shapiro Filter` `Arakawa-C Grid` `Shallow-Water Equations`
-
----
-
-### Rainfall Estimation from Radar Data using Machine Learning
-**Simulation & Modelling 1 · University of Cologne · Jan 2026**
-
-Developed and evaluated data-driven approaches for estimating precipitation from three-dimensional radar reflectivity data.
-
-- Processed **3D radar volume data** matched with rain-gauge observations
-- Worked with strongly imbalanced precipitation data containing a large proportion of non-rain samples
-- Compared three modelling approaches: an empirical **Z-R relationship**, **Linear Regression**, and a **Graph Neural Network (GNN)**
-- Used graph-based modelling to represent spatial relationships between radar bins across elevation sweeps
-- Evaluated predictions using **RMSE, MAE, P95 absolute error, and bias**
-- Achieved improved predictive performance with the GNN compared with the empirical baseline
-- Presented the final results to the supervising professors
-
-**Tech & Methods:** `Python` `PyTorch Geometric` `scikit-learn` `NumPy` `Matplotlib` `Graph Neural Networks` `Radar Data` `Regression` `Model Evaluation`
-
----
-
-### Earth System Data Processing Pipeline
-**Earth System Data Processing · University of Cologne · Feb 2026**
-
-Designed and implemented a reproducible Python workflow for processing multidimensional atmospheric datasets from raw input to analysis-ready output.
-
-- Designed an end-to-end data-processing task from dataset selection to final output
-- Accessed and processed atmospheric data in **GRIB and NetCDF** formats
-- Used `xarray` and `cfgrib` for labelled multidimensional data processing
-- Applied **spatial subsetting, temporal aggregation, and regridding**
-- Converted processed datasets to **Zarr** for chunked, analysis-ready storage
-- Structured the project as a modular and reproducible workflow using configuration files and documentation
-- Used Git throughout development and submitted the completed project through a Git-based workflow
-
-**Tech & Methods:** `Python` `xarray` `cfgrib` `ERA5` `GRIB` `NetCDF` `Zarr` `Git` `Regridding` `Reproducible Workflows`
-
----
-
 ## Technical Skills
 
 **Programming & Scientific Computing**  
@@ -82,7 +27,7 @@ Designed and implemented a reproducible Python workflow for processing multidime
 `ODEs` · `PDEs` · `Finite Differences` · `Numerical Stability` · `CFL Analysis` · `Numerical Simulation`
 
 **Research Workflow**  
-`Git` · `GitHub` · `Jupyter Notebook` · `VS Code` · `Linux/CLI` · `Bash`
+`Git` · `GitHub` · `Jupyter Notebook` · `VS Code` · 
 
 ---
 
